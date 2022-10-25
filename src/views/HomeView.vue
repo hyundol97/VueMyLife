@@ -1,15 +1,13 @@
 <template>
-  <hello-world />
+  <div>
+    <img src="@/assets/main_logo.png" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from "../components/HelloWorld";
-
 export default {
   name: "HomeView",
 
-  components: {
-    HelloWorld,
-  },
+  components: {},
 };
 </script>
