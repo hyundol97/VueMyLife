@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-import Home from "../views/Home";
+import Home from "@/views/Home";
 import configRoutes from "./modules/config/index";
 import introduceRoutes from "./modules/introduce/index";
 import diaryRoutes from "./modules/diary/index";
@@ -36,7 +36,7 @@ export const constantRoutes = [
 export const asyncRoutes = [
   {
     path: "/",
-    redirect: { name: "welcome" },
+    redirect: { name: "home" },
     hidden: true,
   },
   // 설정

@@ -1,5 +1,6 @@
 export default {
   path: "/",
+  name: "홈",
   hidden: true,
   children: [
     {

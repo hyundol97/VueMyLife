@@ -1,6 +1,7 @@
 <template>
   <div>
     <img src="@/assets/main_logo.png" />
+    <div>Config</div>
   </div>
 </template>
 
