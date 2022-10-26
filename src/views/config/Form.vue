@@ -9,6 +9,14 @@
 export default {
   name: "ConfigForm",
 
+  data() {
+    return {};
+  },
+
+  created() {
+    console.log("created!!");
+  },
+
   components: {},
 };
 </script>

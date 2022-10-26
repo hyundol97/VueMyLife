@@ -55,6 +55,14 @@ const routes = [
     name: "home",
     component: Home,
   },
+  // 설정
+  configRoutes,
+  // // 자기소개
+  // introduceRoutes,
+  // // 다이어리
+  // diaryRoutes,
+  // // 지출내역
+  // manageRoutes,
   // {
   //   path: "/about",
   //   name: "about",

@@ -2,10 +2,9 @@ export default {
   path: "/diary",
   redirect: { name: "diary-list" },
   name: "diary",
-  alwaysShow: true,
+  component: () => import("@/views/diary/List"),
   meta: {
     title: "다이어리",
-    icon: "closed-cardboard-box-with-packing-tape",
   },
   children: [],
 };
