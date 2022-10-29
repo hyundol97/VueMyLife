@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 
 import Home from "@/views/Home";
+import Config from "@/views/config/Form";
 import configRoutes from "./modules/config/index";
 import introduceRoutes from "./modules/introduce/index";
 import diaryRoutes from "./modules/diary/index";
@@ -54,6 +55,12 @@ const routes = [
     path: "/",
     name: "home",
     component: Home,
+  },
+
+  {
+    path: "/config",
+    name: "config",
+    component: Config,
   },
   // 설정
   configRoutes,

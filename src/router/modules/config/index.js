@@ -4,7 +4,7 @@ import summaryRoutes from "./summary";
 export default {
   path: "/config",
   name: "config",
-  redirect: { name: "config-summary-list" },
+  redirect: { name: "config-summary" },
   meta: {
     title: "설정",
   },

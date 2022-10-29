@@ -1,6 +1,6 @@
 export default {
   path: "/config/address",
-  name: "address",
+  name: "config-address",
   component: () => import("@/views/config/Form"),
   meta: {
     title: "정보",
