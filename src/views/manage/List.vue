@@ -1,6 +1,5 @@
 <template>
   <div>
-    <img src="@/assets/main_logo.png" />
     <div>Manage</div>
   </div>
 </template>

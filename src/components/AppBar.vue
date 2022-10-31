@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <div class="home-app-bar">
+    <div class="home-app-bar">
       <router-link to="/">
         <img src="@/assets/main_logo.png" class="home-app-bar-img" />
       </router-link>
@@ -10,14 +10,12 @@
       <router-link to="/manage">메뉴3</router-link>
       <router-link to="/config">메뉴4</router-link>
     </div>
-
-    <div>홈 입니다.</div> -->
   </div>
 </template>
 
 <script>
 export default {
-  name: "HomePage",
+  name: "AppBar",
 
   components: {},
 };
