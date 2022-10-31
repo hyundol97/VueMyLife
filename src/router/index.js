@@ -3,6 +3,9 @@ import VueRouter from "vue-router";
 
 import Home from "@/views/Home";
 import Config from "@/views/config/Form";
+import Introduce from "@/views/introduce/List";
+import Diary from "@/views/diary/List";
+import Manage from "@/views/manage/List";
 import configRoutes from "./modules/config/index";
 import introduceRoutes from "./modules/introduce/index";
 import diaryRoutes from "./modules/diary/index";
@@ -62,8 +65,27 @@ const routes = [
     name: "config",
     component: Config,
   },
-  // 설정
-  configRoutes,
+
+  {
+    path: "/introduce",
+    name: "introduce",
+    component: Introduce,
+  },
+
+  {
+    path: "/diary",
+    name: "diary",
+    component: Diary,
+  },
+
+  {
+    path: "/manage",
+    name: "manage",
+    component: Manage,
+  },
+
+  // // 설정
+  // configRoutes,
   // // 자기소개
   // introduceRoutes,
   // // 다이어리
