@@ -1,14 +1,18 @@
 <template>
   <div>
     <div class="home-app-bar">
-      <router-link to="/">
-        <img src="@/assets/main_logo.png" class="home-app-bar-img" />
-      </router-link>
+      <div>
+        <router-link to="/">
+          <img src="@/assets/main_logo_noBG.png" class="home-app-bar-img" />
+        </router-link>
+      </div>
 
-      <router-link to="/introduce">메뉴1</router-link>
-      <router-link to="/diary">메뉴2</router-link>
-      <router-link to="/manage">메뉴3</router-link>
-      <router-link to="/config">메뉴4</router-link>
+      <div>
+        <router-link to="/introduce">Introduction</router-link>
+        <router-link to="/diary">Diary</router-link>
+        <router-link to="/manage">Manage</router-link>
+        <router-link to="/config">Config</router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -29,7 +33,7 @@ export default {
   justify-content: space-between;
   text-align: center;
   margin: 0 auto;
-  background: red;
+  background: none;
 }
 /* .home-app-bar-wrapper {
   display: table-cell;
