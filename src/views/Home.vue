@@ -32,15 +32,19 @@ export default {
 
 <style scoped>
 .home-section {
-  width: 100vw;
-  height: 100vh;
-  background-size: cover;
+  /* width: 100vw;
+  height: 100vh; */
+  background-size: 100% 100%;
+  line-height: 100vh;
+  text-align: center;
+  vertical-align: middle;
 }
 
 #home-section-text {
   color: black;
   font-size: 32px;
   margin: 0 auto;
-  text-align: center;
+  transform: translate3d(0px, 50px, 0px);
+  animation: 0.5s ease-in-out 0.5s 1 normal forwards running;
 }
 </style>
