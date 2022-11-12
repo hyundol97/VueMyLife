@@ -12,6 +12,7 @@
     </div>
 
     <div>홈 입니다.</div> -->
+    홈 입니다.
   </div>
 </template>
 
