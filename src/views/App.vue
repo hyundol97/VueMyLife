@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style>
-@media (min-width: 480px) {
+/* @media (min-width: 480px) {
   .app div {
     width: "100%";
   }
@@ -30,5 +30,5 @@ export default {
     width: 70%;
     margin-left: 15%;
   }
-}
+} */
 </style>
