@@ -6,7 +6,7 @@
                 :style="{
                     backgroundImage:
                         'url(' + require(`@/assets/${bgImage}`) + ')',
-                    opacity: 0.4,
+                    opacity: 0.4
                 }"
             >
                 <p v-if="idx === 0" id="home-section-text">Section 1</p>
@@ -19,15 +19,15 @@
 
 <script>
 export default {
-    name: 'HomePage',
+    name: "HomePage",
 
     data() {
         return {
-            sectionImages: ['home_img1.png', 'home_img2.png', 'home_img3.png'],
+            sectionImages: ["home_img1.png", "home_img2.png", "home_img3.png"]
         };
     },
 
-    components: {},
+    components: {}
 };
 </script>
 

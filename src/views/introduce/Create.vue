@@ -6,8 +6,8 @@
 
 <script>
 export default {
-    name: 'CreateIntroduce',
+    name: "CreateIntroduce",
 
-    components: {},
+    components: {}
 };
 </script>

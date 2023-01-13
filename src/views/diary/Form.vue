@@ -6,8 +6,8 @@
 
 <script>
 export default {
-    name: 'DiaryForm',
+    name: "DiaryForm",
 
-    components: {},
+    components: {}
 };
 </script>

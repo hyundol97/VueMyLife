@@ -6,16 +6,16 @@
 
 <script>
 export default {
-    name: 'ConfigForm',
+    name: "ConfigForm",
 
     data() {
         return {};
     },
 
     created() {
-        console.log('created!!');
+        console.log("created!!");
     },
 
-    components: {},
+    components: {}
 };
 </script>

@@ -1,25 +1,25 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import Vue from "vue";
+import VueRouter from "vue-router";
 
-import Home from '@/views/Home';
-import Config from '@/views/config/Form';
-import Introduce from '@/views/introduce/List';
-import Diary from '@/views/diary/List';
-import Manage from '@/views/manage/List';
-import configRoutes from './modules/config/index';
-import introduceRoutes from './modules/introduce/index';
-import diaryRoutes from './modules/diary/index';
-import manageRoutes from './modules/manage/index';
+import Home from "@/views/Home";
+import Config from "@/views/config/Form";
+import Introduce from "@/views/introduce/List";
+import Diary from "@/views/diary/List";
+import Manage from "@/views/manage/List";
+import configRoutes from "./modules/config/index";
+import introduceRoutes from "./modules/introduce/index";
+import diaryRoutes from "./modules/diary/index";
+import manageRoutes from "./modules/manage/index";
 
 Vue.use(VueRouter);
 
 export const constantRoutes = [
     {
-        path: '/login',
-        component: () => import('@/views/login/index'),
-        meta: { title: 'Login' },
-        hidden: true,
-    },
+        path: "/login",
+        component: () => import("@/views/login/index"),
+        meta: { title: "Login" },
+        hidden: true
+    }
     // {
     //   path: '/auth-redirect',
     //   component: () => import('@/views/login/AuthRedirect'),
@@ -39,9 +39,9 @@ export const constantRoutes = [
 
 export const asyncRoutes = [
     {
-        path: '/',
-        redirect: { name: 'home' },
-        hidden: true,
+        path: "/",
+        redirect: { name: "home" },
+        hidden: true
     },
     // 설정
     configRoutes,
@@ -50,39 +50,39 @@ export const asyncRoutes = [
     // 다이어리
     diaryRoutes,
     // 지출내역
-    manageRoutes,
+    manageRoutes
 ];
 
 const routes = [
     {
-        path: '/',
-        name: 'home',
-        component: Home,
+        path: "/",
+        name: "home",
+        component: Home
     },
 
     {
-        path: '/config',
-        name: 'config',
-        component: Config,
+        path: "/config",
+        name: "config",
+        component: Config
     },
 
     {
-        path: '/introduce',
-        name: 'introduce',
-        component: Introduce,
+        path: "/introduce",
+        name: "introduce",
+        component: Introduce
     },
 
     {
-        path: '/diary',
-        name: 'diary',
-        component: Diary,
+        path: "/diary",
+        name: "diary",
+        component: Diary
     },
 
     {
-        path: '/manage',
-        name: 'manage',
-        component: Manage,
-    },
+        path: "/manage",
+        name: "manage",
+        component: Manage
+    }
 
     // // 설정
     // configRoutes,
@@ -104,9 +104,9 @@ const routes = [
 ];
 
 const router = new VueRouter({
-    mode: 'history',
+    mode: "history",
     base: process.env.BASE_URL,
-    routes,
+    routes
 });
 
 export default router;

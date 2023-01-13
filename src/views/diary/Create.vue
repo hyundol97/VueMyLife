@@ -6,8 +6,8 @@
 
 <script>
 export default {
-    name: 'CreateDiary',
+    name: "CreateDiary",
 
-    components: {},
+    components: {}
 };
 </script>

@@ -28,9 +28,9 @@
 
 <script>
 export default {
-    name: 'AppBar',
+    name: "AppBar",
 
-    components: {},
+    components: {}
 };
 </script>
 

@@ -6,8 +6,8 @@
 
 <script>
 export default {
-    name: 'LoginPage',
+    name: "LoginPage",
 
-    components: {},
+    components: {}
 };
 </script>

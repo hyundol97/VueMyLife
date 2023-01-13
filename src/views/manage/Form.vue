@@ -6,8 +6,8 @@
 
 <script>
 export default {
-    name: 'ManageForm',
+    name: "ManageForm",
 
-    components: {},
+    components: {}
 };
 </script>

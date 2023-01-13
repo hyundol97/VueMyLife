@@ -10,7 +10,7 @@
             :loading-text="`Loading..`"
             class="elevation-1 list-data"
         >
-            <template v-slot:item.is_best="{ item }">
+            <template v-slot:[`item.is_best`]="{ item }">
                 <v-chip :color="getColor(item.is_best)" dark>
                     {{ item.is_best }}
                 </v-chip>
@@ -21,7 +21,7 @@
 
 <script>
 export default {
-    name: 'IntroduceList',
+    name: "IntroduceList",
     components: {},
     data() {
         return {
@@ -30,11 +30,11 @@ export default {
             introduceList: [
                 {
                     id: 1,
-                    title: '프론트엔드 자기소개서',
-                    created_at: '2022-10-11',
-                    updated_at: '2022-10-11',
-                    is_best: false,
-                },
+                    title: "프론트엔드 자기소개서",
+                    created_at: "2022-10-11",
+                    updated_at: "2022-10-11",
+                    is_best: false
+                }
             ],
             // 자기소개 데이터들 중 노출을 원하는 데이터 (사용자가 선택)
             bestData: {},
@@ -42,17 +42,17 @@ export default {
             isEmpty: false,
             headers: [
                 {
-                    text: 'No.',
-                    align: 'start',
+                    text: "No.",
+                    align: "start",
                     sortable: false,
-                    value: 'id',
-                    width: 100,
+                    value: "id",
+                    width: 100
                 },
-                { text: '제목', value: 'title', width: 800 },
-                { text: '등록일', value: 'created_at', width: 200 },
-                { text: '수정일', value: 'updated_at', width: 200 },
-                { text: '대표 데이터', value: 'is_best', width: 200 },
-            ],
+                { text: "제목", value: "title", width: 800 },
+                { text: "등록일", value: "created_at", width: 200 },
+                { text: "수정일", value: "updated_at", width: 200 },
+                { text: "대표 데이터", value: "is_best", width: 200 }
+            ]
         };
     },
     created() {
@@ -74,8 +74,8 @@ export default {
             } finally {
                 this.loading = false;
             }
-        },
-    },
+        }
+    }
 };
 </script>
 

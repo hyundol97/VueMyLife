@@ -6,8 +6,8 @@
 
 <script>
 export default {
-    name: 'ManageList',
+    name: "ManageList",
 
-    components: {},
+    components: {}
 };
 </script>

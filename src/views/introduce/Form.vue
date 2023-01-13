@@ -6,8 +6,8 @@
 
 <script>
 export default {
-    name: 'IntroduceForm',
+    name: "IntroduceForm",
 
-    components: {},
+    components: {}
 };
 </script>

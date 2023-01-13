@@ -1,14 +1,14 @@
-import addressRoutes from './address';
-import summaryRoutes from './summary';
-import AppBar from '@/components/AppBar';
+import addressRoutes from "./address";
+import summaryRoutes from "./summary";
+import AppBar from "@/components/AppBar";
 
 export default {
-    path: '/config',
+    path: "/config",
     component: AppBar,
-    name: 'config',
-    redirect: { name: 'config-summary' },
+    name: "config",
+    redirect: { name: "config-summary" },
     meta: {
-        title: '설정',
+        title: "설정"
     },
-    children: [addressRoutes, summaryRoutes],
+    children: [addressRoutes, summaryRoutes]
 };
