@@ -32,8 +32,6 @@ export default {
 
 <style scoped>
 .home-section {
-  /* width: 100vw;
-  height: 100vh; */
   background-size: 100% 100%;
   line-height: 100vh;
   text-align: center;

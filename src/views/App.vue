@@ -2,19 +2,17 @@
   <div class="app">
     <app-bar />
     <router-view />
+    <foot-bar />
   </div>
 </template>
 
 <script>
 import AppBar from "@/components/AppBar";
+import FootBar from "@/components/Footer";
 
 export default {
   name: "App",
-  components: { AppBar },
-
-  data: () => ({
-    //
-  }),
+  components: { AppBar, FootBar },
 };
 </script>
 
