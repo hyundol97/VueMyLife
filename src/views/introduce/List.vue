@@ -1,6 +1,32 @@
 <template>
-    <div v-loading="loading">
-        <div>Introduce</div>
+    <div>
+        <h2>Introduce</h2>
+
+        <div v-if="!isEmpty">
+            <v-card class="intro-card-section" elevation="2">
+                <div>이미지</div>
+
+                <div>
+                    <span> 이름 </span>
+                </div>
+            </v-card>
+
+            <v-card class="intro-card-section" elevation="2">
+                <div>이미지</div>
+
+                <div>
+                    <span> 이름 </span>
+                </div></v-card
+            >
+
+            <v-card class="intro-card-section" elevation="2"
+                ><div>이미지</div>
+
+                <div>
+                    <span> 이름 </span>
+                </div></v-card
+            >
+        </div>
 
         <v-data-table
             :headers="headers"
@@ -11,9 +37,8 @@
             class="elevation-1 list-data"
         >
             <template v-slot:[`item.is_best`]="{ item }">
-                <v-chip :color="getColor(item.is_best)" dark>
-                    {{ item.is_best }}
-                </v-chip>
+                <v-chip v-if="item.is_best" dark />
+                <span v-else></span>
             </template>
         </v-data-table>
     </div>
@@ -34,12 +59,47 @@ export default {
                     created_at: "2022-10-11",
                     updated_at: "2022-10-11",
                     is_best: false
+                },
+                {
+                    id: 2,
+                    title: "프론트엔드 자기소개서2",
+                    created_at: "2022-10-14",
+                    updated_at: "2022-12-22",
+                    is_best: true
+                },
+                {
+                    id: 3,
+                    title: "프론트엔드 자기소개서3",
+                    created_at: "2023-01-02",
+                    updated_at: "2023-01-04",
+                    is_best: false
+                },
+                {
+                    id: 4,
+                    title: "프론트엔드 자기소개서4",
+                    created_at: "2023-01-03",
+                    updated_at: "2023-01-03",
+                    is_best: false
+                },
+                {
+                    id: 5,
+                    title: "프론트엔드 자기소개서5",
+                    created_at: "2023-01-09",
+                    updated_at: "2023-01-10",
+                    is_best: false
+                },
+                {
+                    id: 6,
+                    title: "프론트엔드 자기소개서6",
+                    created_at: "2023-01-11",
+                    updated_at: "2023-01-11",
+                    is_best: false
                 }
             ],
             // 자기소개 데이터들 중 노출을 원하는 데이터 (사용자가 선택)
             bestData: {},
             // 사용자의 DB에 자기소개 데이터가 없음을 구분하는 Boolean 값
-            isEmpty: false,
+            isEmpty: true,
             headers: [
                 {
                     text: "No.",
@@ -69,6 +129,18 @@ export default {
                 // } else {
                 //   this.isEmpty = true;
                 // }
+
+                for (let i = 0; i < this.introduceList.length; i++) {
+                    // 대표 데이터로 설정된 데이터 캐스팅
+                    if (this.introduceList[i].is_best) {
+                        Object.assign(
+                            this.bestData,
+                            this.introduceList[i].is_best
+                        );
+                        this.isEmpty = false;
+                        break;
+                    }
+                }
             } catch (error) {
                 console.log(error);
             } finally {
@@ -80,6 +152,11 @@ export default {
 </script>
 
 <style scoped>
+.intro-card-section {
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
 .list-data {
     text-align: center;
 }
