@@ -8,9 +8,7 @@
       </div>
 
       <div class="home-app-bar-menu">
-        <router-link to="/introduce" class="menu-items"
-          >Introduction</router-link
-        >
+        <router-link to="/introduce" class="menu-items">Intro</router-link>
         <router-link to="/diary" class="menu-items">Diary</router-link>
         <router-link to="/manage" class="menu-items">Manage</router-link>
         <router-link to="/config" class="menu-items">Config</router-link>
@@ -31,28 +29,26 @@ export default {
 .home-app-bar {
   display: table;
   width: 100%;
-  height: 6px;
+  height: 150px;
   justify-content: space-between;
   text-align: center;
   margin: 0 auto;
   background: none;
   font-size: 18px;
 }
-/* .home-app-bar-wrapper {
-  display: table-cell;
-  vertical-align: middle;
-} */
+
 .home-app-bar-img {
   max-width: 60px;
   max-height: 60px;
 }
 
 .home-app-bar-menu {
+  margin-top: 15px;
 }
 
 .menu-items {
   text-decoration: none;
   color: black;
-  margin: 10px;
+  margin: 15px;
 }
 </style>
