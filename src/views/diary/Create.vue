@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <img src="@/assets/main_logo.png" />
-  </div>
+    <div>
+        <img src="@/assets/main_logo.png" />
+    </div>
 </template>
 
 <script>
 export default {
-  name: "CreateDiary",
+    name: 'CreateDiary',
 
-  components: {},
+    components: {},
 };
 </script>

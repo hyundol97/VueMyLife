@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <div>Manage</div>
-  </div>
+    <div>
+        <div>Manage</div>
+    </div>
 </template>
 
 <script>
 export default {
-  name: "ManageList",
+    name: 'ManageList',
 
-  components: {},
+    components: {},
 };
 </script>

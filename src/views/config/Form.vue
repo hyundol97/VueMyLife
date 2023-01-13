@@ -1,21 +1,21 @@
 <template>
-  <div>
-    <div>Config</div>
-  </div>
+    <div>
+        <div>Config</div>
+    </div>
 </template>
 
 <script>
 export default {
-  name: "ConfigForm",
+    name: 'ConfigForm',
 
-  data() {
-    return {};
-  },
+    data() {
+        return {};
+    },
 
-  created() {
-    console.log("created!!");
-  },
+    created() {
+        console.log('created!!');
+    },
 
-  components: {},
+    components: {},
 };
 </script>

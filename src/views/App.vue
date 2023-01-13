@@ -1,18 +1,18 @@
 <template>
-  <div class="app">
-    <app-bar />
-    <router-view />
-    <foot-bar />
-  </div>
+    <div class="app">
+        <app-bar />
+        <router-view />
+        <foot-bar />
+    </div>
 </template>
 
 <script>
-import AppBar from "@/components/AppBar";
-import FootBar from "@/components/Footer";
+import AppBar from '@/components/AppBar';
+import FootBar from '@/components/Footer';
 
 export default {
-  name: "App",
-  components: { AppBar, FootBar },
+    name: 'App',
+    components: { AppBar, FootBar },
 };
 </script>
 

@@ -7,7 +7,6 @@ export default {
       path: "/",
       component: () => import("@/views/Home"),
       name: "home",
-      path: "/",
     },
   ],
 };
